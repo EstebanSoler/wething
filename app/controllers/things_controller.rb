@@ -12,8 +12,8 @@ class ThingsController < ApplicationController
   end
 
   def show
-    current_user.view(current_thing)
-    redirect_to @thing.url
+#    current_user.view(current_thing)
+#    redirect_to @thing.url
   end
 
 protected

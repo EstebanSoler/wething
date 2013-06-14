@@ -1,0 +1,10 @@
+div
+  div id="thing_menu"class="span12"
+    p class="author badge badge-inverse"= current_thing.user_first_name
+    p class="badge badge-info"
+      span = pluralize(current_thing.user_views.count, 'view')
+    p class="badge badge-success"
+      span = pluralize(current_thing.user_favorites.count, 'favoriter')
+  =link_to "All things", root_path, :class=>"btn btn-link"
+
+  iframe id="thing_iframe" src=current_thing.url class="span12"
