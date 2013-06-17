@@ -17,10 +17,10 @@
 //= require_tree .
 $(document).ready(function () {
 
-  var ventana_alto = $(window).height();
-  var documento_alto = $(document).height();
+  var windows_heigth = $(window).height();
+  var document_height = $(document).height();
 
-  $("#thing_iframe").css("height", documento_alto*0.84);
+  $("#thing_iframe").css("height", document_height*0.84);
 
 
 })
