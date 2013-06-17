@@ -15,3 +15,12 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+$(document).ready(function () {
+
+  var ventana_alto = $(window).height();
+  var documento_alto = $(document).height();
+
+  $("#thing_iframe").css("height", documento_alto*0.84);
+
+
+})
